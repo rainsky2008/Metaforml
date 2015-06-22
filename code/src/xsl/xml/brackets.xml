@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ole:tux-mapping xmlns:ole="http://www.ole.co.in/TUX" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xslt="http://www.w3.org/1999/XSL/Transform/" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" exclude-result-prefixes="mml ole xlink" version="0.1">
+
+<!--brackets-->
+<ole:wrap-tags math="tmpl[@templateType='0' and @variation='3'
+                          or (@templateType='1' and @variation='3')                          
+                          or (@templateType='2' and @variation='3')
+                          or (@templateType='3' and @variation='3')
+                          or (@templateType='4' and @variation='3')
+                          or (@templateType='5' and @variation='3')
+                          or (@templateType='6' and @variation='3')
+						  						or (@templateType='7' and @variation='3')
+						  						or (@templateType='9' and @variation='18')
+						  						or (@templateType='9' and @variation='48')   
+						  						or (@templateType='9' and @variation='34')   
+						  						or (@templateType='9' and @variation='51') 
+						  						or (@templateType='9' and @variation='35')
+													or (@templateType='8' and @variation='3')						  						
+                          ]">  
+  <mrow>   
+      <ole:move tagname="{name(child::*[2])}" math="child::*[2][name()='mo'][preceding-sibling::*[1][name()='line']]" mode="move"/>         
+    <ole:do/>
+  </mrow>  
+</ole:wrap-tags>
+
+<ole:wrap-tags math="tmpl[@templateType='30' and @variation='2'
+										    or (@templateType='30' and @variation='1')   
+					 					]">
+  <mrow>   
+      <ole:move tagname="{name(child::*[3])}" math="child::*[3][name()='mo'][preceding-sibling::*[1][name()='line']]" mode="move"/>         
+    <ole:do/>
+  </mrow>  
+</ole:wrap-tags>
+
+<ole:wrap-tags math="tmpl[@templateType='1' and @variation='1'
+													or (@templateType='3' and @variation='1')
+													or (@templateType='2' and @variation='1')
+													or (@templateType='4' and @variation='1')
+													or (@templateType='5' and @variation='1')													
+													or (@templateType='8' and @variation='1')													
+											]">
+  <mrow>   
+      <ole:move tagname="{name(child::*[2])}" math="child::*[2][name()='mo'][preceding-sibling::*[1][name()='line']]" mode="move"/>         
+    <ole:do/>
+  </mrow>  
+</ole:wrap-tags>
+
+<ole:wrap-tags math="tmpl[@templateType='1' and @variation='2'
+											or (@templateType='3' and @variation='2')
+											or (@templateType='4' and @variation='2')
+											or (@templateType='5' and @variation='2')
+											or (@templateType='2' and @variation='2')
+											or (@templateType='8' and @variation='2')													
+											]">
+    <ole:do/>
+</ole:wrap-tags>
+
+<ole:wrap-tags math="tmpl[@templateType='30' and @variation='3']">
+	<mrow>    
+    <ole:element math="child::*[3]"/>
+    <ole:element math="child::*[1]"/>
+    <ole:element math="child::*[4]"/>      
+    <ole:element math="child::*[2]"/>
+    <ole:element math="child::*[5]"/>      	    
+	</mrow>
+</ole:wrap-tags>
+
+<!--ole:wrap-tags math="line[1][parent::tmpl[@templateType='30' and @variation='3']]">
+  <ole:do/>
+  <ole:move tagname="{name(following-sibling::*[3])}" math="following-sibling::*[3][name()='mo'][preceding-sibling::*[2][name()='line']]" mode="move"/>               
+</ole:wrap-tags-->
+
+</ole:tux-mapping>

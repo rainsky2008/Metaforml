@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ole:tux-mapping xmlns:ole="http://www.ole.co.in/TUX" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xslt="http://www.w3.org/1999/XSL/Transform/" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" exclude-result-prefixes="mml ole xlink" version="0.1">
+
+ <ole:remove-tags math="*[following-sibling::*[1][@templateType='29' and @variation='0']/sub] | 
+                      *[following-sibling::*[1][@templateType='27' and @variation='0']/sub] |
+                      *[following-sibling::*[1][@templateType='27' and @variation='0']/sub2] |  
+                      *[following-sibling::*[1][@templateType='28' and @variation='0']/sub] |
+                      *[following-sibling::*[1][@templateType='28' and @variation='0']/sub2] |                    
+                      *[preceding-sibling::*[1][@templateType='28' and @variation='1']/sub] | 
+                      *[preceding-sibling::*[1][@templateType='27' and @variation='1']/sub] | 
+                      *[preceding-sibling::*[1][@templateType='29' and @variation='1']/sub] | 
+                      *[preceding-sibling::*[2][@templateType='28' and @variation='1']/sub2] | 
+                      *[preceding-sibling::*[2][@templateType='27' and @variation='1']/sub2] |                      
+                      *[following-sibling::*[3][parent::tmpl[@templateType = '19' and (@variation = '80')] and name(preceding-sibling::*[1])='sym']] | 
+                      *[following-sibling::*[2][parent::tmpl[(@templateType = '19') and (@variation = '80')] and name(preceding-sibling::*[1])='sym']] | 
+                      *[parent::tmpl[@templateType = '15' and @variation = '5'] and name(preceding-sibling::*[1])='sym'] |
+                      *[parent::tmpl[(@templateType = '17') and (@variation = '0')] and name(preceding-sibling::*[1])='sym'] |
+                      *[parent::tmpl[(@templateType = '19') and (@variation = '80')] and name(preceding-sibling::*[1])='sym'] |                      
+                      *[preceding-sibling::tmpl[@templateType='28' and @variation='1']] |                      
+                      *[name(preceding-sibling::*[1])='sym' and parent::tmpl[@templateType = '21' and @variation = '32' and child::sub]] |
+                      *[name(preceding-sibling::*[1])='sym' and parent::tmpl[@templateType = '21' and @variation = '16' and child::sub]] |
+                      *[name(preceding-sibling::*[1])='sym' and parent::tmpl[@templateType = '21' and @variation = '48' and child::sub]] |
+                      *[name(preceding-sibling::*[1])='sym' and parent::tmpl[@templateType = '22' and @variation = '96' and child::sub]] |
+                      *[name(preceding-sibling::*[1])='sym' and parent::tmpl[@templateType = '22' and @variation = '80' and child::sub]] |                      
+                      *[preceding-sibling::tmpl[@templateType='27' and @variation='1']] |
+                      sub | sym |
+                      *[parent::tmpl[@templateType = '1' and @variation = '3'] and name()='mo' and preceding-sibling::*[1][name()='line']] |
+                      *[parent::tmpl[@templateType = '3' and @variation = '3'] and name()='mo' and preceding-sibling::*[1][name()='line']] |
+                      *[parent::tmpl[@templateType = '2' and @variation = '3'] and name()='mo' and preceding-sibling::*[1][name()='line']] |
+                      *[parent::tmpl[@templateType = '3' and @variation = '3'] and name()='mo' and preceding-sibling::*[1][name()='line']] | 
+                      *[parent::tmpl[@templateType = '4' and @variation = '3'] and name()='mo' and preceding-sibling::*[1][name()='line']] |
+                      *[parent::tmpl[@templateType = '5' and @variation = '3'] and name()='mo' and preceding-sibling::*[1][name()='line']] |
+                      *[parent::tmpl[@templateType = '6' and @variation = '3'] and name()='mo' and preceding-sibling::*[1][name()='line']] |
+                      *[parent::tmpl[@templateType = '7' and @variation = '3'] and name()='mo' and preceding-sibling::*[1][name()='line']] |
+                      *[parent::tmpl[@templateType = '9' and @variation = '18'] and name()='mo' and preceding-sibling::*[1][name()='line']] |
+                      *[parent::tmpl[@templateType = '9' and @variation = '48'] and name()='mo' and preceding-sibling::*[1][name()='line']] |
+                      *[parent::tmpl[@templateType = '30' and @variation = '2'] and name()='mo' and preceding-sibling::*[1][name()='line']] |
+                      *[parent::tmpl[@templateType = '30' and @variation = '1'] and name()='mo' and preceding-sibling::*[1][name()='line']] |                      
+                      *[parent::tmpl[@templateType='30' and @variation='1'] and name()='mo' and preceding-sibling::*[1][name()='line']] |
+                      *[parent::tmpl[@templateType='9' and @variation='34'] and name()='mo' and preceding-sibling::*[1][name()='line']] |
+                      *[parent::tmpl[@templateType='9' and @variation='51'] and name()='mo' and preceding-sibling::*[1][name()='line']] |
+                      *[parent::tmpl[@templateType='9' and @variation='35'] and name()='mo' and preceding-sibling::*[1][name()='line']] |
+                      *[parent::tmpl[@templateType='8' and @variation='3'] and name()='mo' and preceding-sibling::*[1][name()='line']] |
+                      *[parent::tmpl[@templateType='1' and @variation='1'] and name()='mo' and preceding-sibling::*[1][name()='line']] |
+                      *[parent::tmpl[@templateType='3' and @variation='1'] and name()='mo' and preceding-sibling::*[1][name()='line']] |
+                      *[parent::tmpl[@templateType='2' and @variation='1'] and name()='mo' and preceding-sibling::*[1][name()='line']] |
+                      *[parent::tmpl[@templateType='4' and @variation='1'] and name()='mo' and preceding-sibling::*[1][name()='line']] |
+                      *[parent::tmpl[@templateType='5' and @variation='1'] and name()='mo' and preceding-sibling::*[1][name()='line']] |
+                      *[parent::tmpl[@templateType='8' and @variation='1'] and name()='mo' and preceding-sibling::*[1][name()='line']] |
+                      *[parent::tmpl[@templateType='16' and @variation='64'] and name()='mo' and name(preceding-sibling::*[1]) = 'sym']  |
+                      *[parent::tmpl[@templateType='15' and @variation='1'] and name()='mo' and name(preceding-sibling::*[1]) = 'sym']  |
+                      *[parent::tmpl[@templateType='15' and @variation='2'] and name()='mo' and name(preceding-sibling::*[1]) = 'sym'] |
+                      *[parent::tmpl[@templateType='15' and @variation='6'] and name()='mo' and name(preceding-sibling::*[1]) = 'sym'] |
+                      *[parent::tmpl[@templateType='15' and @variation='7'] and name()='mo' and name(preceding-sibling::*[1]) = 'sym'] |
+                      *[parent::tmpl[@templateType='15' and @variation='9'] and name()='mo' and name(preceding-sibling::*[1]) = 'sym'] |
+                      *[parent::tmpl[@templateType='15' and @variation='13'] and name()='mo' and name(preceding-sibling::*[1]) = 'sym']
+                      "/>                      
+</ole:tux-mapping>

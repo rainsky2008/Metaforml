@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tnq:tux-mapping xmlns:tnq="http://www.tnq.co.in/TUX" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xslt="http://www.w3.org/1999/XSL/Transform/" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" exclude-result-prefixes="mml tnq xlink" version="0.1">
+
+
+
+<!--mfrac-->
+<tnq:wrap-tags math="tmpl[@templateType='11' and @variation='0']">  
+  <mfrac>      
+    <tnq:element math="line[1]/*"/>
+    <tnq:element math="line[2]/*"/>      
+  </mfrac>  
+</tnq:wrap-tags>
+
+<tnq:wrap-tags math="tmpl[@templateType='11' and @variation='1']">   
+    <mstyle scriptlevel="+1">
+      <mfrac>        
+        <tnq:element math="line[1]/*"/>
+        <tnq:element math="line[2]/*"/>        
+      </mfrac>
+    </mstyle>
+</tnq:wrap-tags>
+
+<tnq:wrap-tags math="tmpl[@templateType='11' and @variation='2']">   
+  <mstyle scriptlevel="+1">
+    <mfrac bevelled="true">
+      <tnq:element math="line[1]/*"/>
+      <tnq:element math="line[2]/*"/>        
+    </mfrac>
+  </mstyle>  
+</tnq:wrap-tags>
+
+<tnq:wrap-tags math="tmpl[@templateType='11' and @variation='3']">
+  <mfrac bevelled="true">    
+    <tnq:element math="line[1]/*"/>
+    <tnq:element math="line[2]/*"/>    
+  </mfrac>
+</tnq:wrap-tags>
+
+<tnq:wrap-tags math="tmpl[@templateType='11' and @variation='6']">        
+  <tnq:element math="line[1]/*"/>    
+  <mo>/</mo>    
+  <tnq:element math="line[2]/*"/>      
+</tnq:wrap-tags>
+</tnq:tux-mapping>
