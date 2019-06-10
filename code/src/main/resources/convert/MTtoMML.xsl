@@ -9,6 +9,24 @@
   </math>
 </xsl:template>
 
+ <xsl:template match="pile">
+     <mtable>
+        <xsl:apply-templates />
+     </mtable>
+</xsl:template>
+
+<xsl:template match="pile/row">
+        <mtr>
+            <xsl:apply-templates />
+        </mtr>
+</xsl:template>
+
+<xsl:template match="pile/row/*">
+        <mtd>
+            <xsl:apply-templates />
+        </mtd>
+</xsl:template>
+
 <xsl:template match="line">
   <mrow>
     <xsl:apply-templates/>
@@ -49,11 +67,20 @@
 </xsl:template>
 
 <xsl:template match="tmpl[matches(@templateType,'^[0-9]$')]">
-  <xsl:variable name="open" select="codepoints-to-string(*[2]/@MTCode)" />
-  <xsl:variable name="close" select="codepoints-to-string(*[3]/@MTCode)" />
-  <mfenced open="{$open}" close="{$close}">
-    <xsl:apply-templates select="*[1]"/>
-  </mfenced>
+  <xsl:if test="not(string-length(*[2]/@MTCode) = 0)">
+    <xsl:variable name="open" select="codepoints-to-string(*[2]/@MTCode)" />
+    <xsl:variable name="close" select="codepoints-to-string(*[3]/@MTCode)" />
+    <mfenced open="{$open}" close="{$close}">
+      <xsl:apply-templates select="*[1]"/>
+    </mfenced>
+  </xsl:if>
+  <xsl:if test="string-length(*[2]/@MTCode) = 0">
+    <xsl:variable name="open" select="codepoints-to-string(*[3]/@MTCode)" />
+    <xsl:variable name="close" select="codepoints-to-string(*[4]/@MTCode)" />
+    <mfenced open="{$open}" close="{$close}">
+      <xsl:apply-templates select="*[1]"/>
+    </mfenced>
+  </xsl:if>
 </xsl:template>
 
 <xsl:template match="tmpl[@templateType = '10']">

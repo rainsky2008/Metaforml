@@ -174,6 +174,15 @@ public class XmlGeneratorVisitor implements RecordVisitor {
 
     public void visit(PILE aPile) {
         Element el = new Element("pile");
+        current.push(el);
+        for(Record record : aPile.getRecords()) {
+            Element rowEl = new Element("row");
+            current.push(rowEl);
+            record.accept(this);
+            current.pop();
+            current.peek().appendChild(rowEl);
+        }
+        current.pop();
         current.peek().appendChild(el);
     }
 
